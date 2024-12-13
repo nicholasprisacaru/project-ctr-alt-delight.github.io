@@ -51,23 +51,27 @@
 - Consumer Discretionary
 - Energy
 #### How We'll Get There:
-| Steps | Execution | 
-|----------|----------|
-| 1 | Sign-up With Tiingo API To Get Credentials | 
-| 2 | Use Credentials To Receieve Authentication Token | 
-| 3 | Make API Requests And Recieve Raw JSONL Responses |
-| 4 | Normalize Responses To 3rd Normal Form (3NF) And Select Desired Fields |
-| 5 | Store in SQLite Database |
-| 6 | Read Database And Use Plotting Libraries (MatPlotlib, Let's-plot) To Make Visualisation |
+
+| Steps | Execution                                                                 |
+|-------|---------------------------------------------------------------------------|
+| 1     | Sign-up with Tiingo API to get credentials                                |
+| 2     | Use credentials to receive authentication token                          |
+| 3     | Make API requests and receive raw JSONL responses                         |
+| 4     | Normalize responses to 3rd Normal Form (3NF) and select desired fields    |
+| 5     | Store in SQLite database                                                 |
+| 6     | Read database and use plotting libraries (Matplotlib, Let's-plot) to make visualisation |
+
 
 ![Project Flowchart](project_flowchart.png)
 
 #### Work Distribution:
-| Name | Role | 
-|----------|----------|
-| Samuel | Data Collection -> Gather Credentials And Access Token To Query Tiingo API For JSONL Responses | 
-| Nicholas & Aishik | Data Manipulation -> Use Pandas to Create Normalize DataFrames and Save Them To A SQLite Database | 
-| Zaid | Data Visualisation -> Use Refined Data To Plot and Visualise Data |
+
+| Name                | Role                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Samuel              | Data Collection -> Gather credentials and access token to query Tiingo API for JSONL responses |
+| Nicholas & Aishik   | Data Manipulation -> Use Pandas to create normalized DataFrames and save them to a SQLite database |
+| Zaid                | Data Visualisation -> Use refined data to plot and visualise data    |
+
 
 
 #### Constraints:
