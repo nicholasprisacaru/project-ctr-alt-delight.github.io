@@ -23,12 +23,11 @@
 | Niche Data                              | May Be Unavailable                | May Be Unavailable             | Tie    |
 | Documentation & Developer Support       | Comprehensive                     | Comprehensive                  | Tie    |
 
-
 **Conclusion**: Since Tiingo beat AlphaVantage for all 3 aspects, we decided to choose Tiingo
 
 #### Endpoints: 
-- IEX
-- EOD Stock Price
+- IEX(Investors Exchange)
+- EOD(End-Of-Day) Stock Price
 
 #### Requirements: 
 - Authentication Credentials
@@ -40,23 +39,39 @@
 #### Research Question:
 - How have the different industries on the financial markets performed over the last 5 years?
 
+#### Potential Industries to analyse (Best performing Sectors according to [Bloomberg UK](<https://www.bloomberg.com/markets/sectors>))
+- Information Technology
+- Financials
+- Healthcare
+- Defense
+- Real Estate
+- Industrials
+- Communications
+- Consumer Staples
+- Consumer Discretionary
+- Energy
 #### How We'll Get There:
-| Steps | Execution | 
-|----------|----------|
-| 1 | Sign-up With Tiingo API To Get Credentials | 
-| 2 | Use Credentials To Receieve Authentication Token To Make API Requests | 
-| 3 | Normalize Responses To 3NF And Select Relevant Fields |
-| 4 | Store in SQLite Database |
-| 5 | Read Database And Use Plotting Libraries (MatPlotlib, Let's-plot) To Make Visualisation |
+
+| Steps | Execution                                                                 |
+|-------|---------------------------------------------------------------------------|
+| 1     | Sign-up with Tiingo API to get credentials                                |
+| 2     | Use credentials to receive authentication token                          |
+| 3     | Make API requests and receive raw JSONL responses                         |
+| 4     | Normalize responses to 3rd Normal Form (3NF) and select desired fields    |
+| 5     | Store in SQLite database                                                 |
+| 6     | Read database and use plotting libraries (Matplotlib, Let's-plot) to make visualisation |
+
 
 ![Project Flowchart](project_flowchart.png)
 
 #### Work Distribution:
-| Name | Role | 
-|----------|----------|
-| Samuel | Data Collection -> Gather Credentials And Access Token To Query Tiingo API For JSONL Responses | 
-| Nicholas & Aishik | Data Manipulation -> Use Pandas to Create Normalize DataFrames and Save Them To A SQLite Database | 
-| Zaid | Data Visualisation -> Use Refined Data To Plot and Visualise Data |
+
+| Name                | Role                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Samuel              | Data Collection -> Gather credentials and access token to query Tiingo API for JSONL responses |
+| Nicholas & Aishik   | Data Manipulation -> Use Pandas to create normalized DataFrames and save them to a SQLite database |
+| Zaid                | Data Visualisation -> Use refined data to plot and visualise data    |
+
 
 
 #### Constraints:
@@ -90,26 +105,3 @@
 
 ![Project Timeline](project_timeline.png)
 
-
-1. From 6 Dec 2024 to 6 Jan 2024
-  - Set up Tiingo accounts with personal authentication token (Each group member would do so)
-  - Explore potential endpoints to use
-    -  End-of-Day Endpoint
-    -  News Endpoint
-  - Since we are using individual stocks to build our own ETF, we will be using this endpoint: Historical Intraday Prices Endpoint for International Exchange (IEX)
-  - Determine the potential timeframe to study (Max of 5 years)
-2. From 6 Jan 2025 to 20 Jan 2025
-- Gettng JSONL files
-- Process JSONL files (Normalise and Explode)
-- Store the cleaned data into a SQL Database
-- Establsh necessary primary & foreign key (composite key if necessary)
-3. From 20 Jan 2025 to 1 Feb 2025
-- Engaging in data visualisation of the data present in the SQL database
-- Determine the types of data visualisation to use
-  - Line graphs to determine trends across time
-  - Pie charts to determine weightage of each industry
-  - Use historical data to determine potential return of our ETF
-  - Lastly, draw conclusions about ETF and our overall data analysis
-4. From 1 Feb 2025 to 8 Feb 2025
-- Engage in minor changes and bug fixes
-- Amend conclusion if necessary
