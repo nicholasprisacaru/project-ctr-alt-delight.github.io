@@ -11,16 +11,18 @@
 #### API:
 - Tiingo API
 
-#### Justification: 
-| Factors | Tiingo | AlphaVantage | Choice |
-|----------|----------|----------|----------|
-| Request Limit (Per Day) | 1000 | 25 | Tiingo |
-| Data | More Comprehensive | Less Comprehensive | Tiingo |
-| Connections | IEX Exchange | Nil | Tiingo |
-| Real-Time Data Availability | Available for All Instruments | Limited for Certain Instruments | Tiingo |
-| Extensiveness of Data | Extensive for All Instruments | Extensiveness Depends on Specific Instrument & Timeframe | Tiingo |
-| Niche Data | May Be Unavailable | May be Unavailable | Tie |
-| Documentation & Developer Support | Comprehensive | Comprehensive | Tie |
+### Justification: 
+
+| Factors                                 | Tiingo                            | AlphaVantage                  | Choice |
+|-----------------------------------------|-----------------------------------|--------------------------------|--------|
+| Request Limit (Per Day)                 | 1000                              | 25                             | Tiingo |
+| Data                                    | More Comprehensive                | Less Comprehensive             | Tiingo |
+| Connections                             | IEX Exchange                      | Nil                            | Tiingo |
+| Real-Time Data Availability             | Available for All Instruments     | Limited for Certain Instruments | Tiingo |
+| Extensiveness of Data                   | Extensive for All Instruments     | Extensiveness Depends on Specific Instrument & Timeframe | Tiingo |
+| Niche Data                              | May Be Unavailable                | May Be Unavailable             | Tie    |
+| Documentation & Developer Support       | Comprehensive                     | Comprehensive                  | Tie    |
+
 
 **Conclusion**: Since Tiingo beat AlphaVantage for all 3 aspects, we decided to choose Tiingo
 
