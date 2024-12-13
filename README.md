@@ -1,1 +1,1 @@
-# project-ctr-alt-delight.github.io
+# project-ctr-alt-delight
